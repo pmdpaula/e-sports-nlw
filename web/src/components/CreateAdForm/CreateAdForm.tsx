@@ -62,7 +62,7 @@ export const CreateAdForm = () => {
             name="game"
             aria-label="Game"
             className={`bg-zinc-900 py-3 px-4 rounded text-small flex justify-between ${
-              gamesInput ? "text-white" : "text-zinc-500"
+              gamesInput.length !== ? "text-white" : "text-zinc-500"
             }`}>
             <Select.SelectValue placeholder="Select a game" />
             <Select.SelectIcon>
